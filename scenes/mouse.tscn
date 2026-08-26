@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d50wsnu26asm"]
+
+[ext_resource type="Texture2D" uid="uid://dhugqev6ohhcu" path="res://assets/mouse.webp" id="1_5v7j2"]
+[ext_resource type="Script" uid="uid://bjshqfsmet0xs" path="res://scenes/mouse.gd" id="1_ouscy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ouscy"]
+size = Vector2(62, 100)
+
+[node name="mouse" type="CharacterBody2D" unique_id=1026600477]
+script = ExtResource("1_ouscy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=174198772]
+position = Vector2(-1.9073486e-06, -1.1368684e-13)
+scale = Vector2(0.058333322, 0.088333316)
+texture = ExtResource("1_5v7j2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2034203907]
+shape = SubResource("RectangleShape2D_ouscy")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1362173947]
+zoom = Vector2(0.9, 0.9)
+position_smoothing_enabled = true

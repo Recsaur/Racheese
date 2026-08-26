@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dxtbwh2aftlki"]
+
+[ext_resource type="PackedScene" uid="uid://d50wsnu26asm" path="res://scenes/mouse.tscn" id="1_dyl4d"]
+[ext_resource type="Texture2D" uid="uid://dmkkqydqcy0l3" path="res://assets/DirtAndStones_S.jpg" id="1_km2bi"]
+
+[node name="MainMap" type="Node2D" unique_id=625265214]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=451725881]
+position = Vector2(494, 259)
+texture = ExtResource("1_km2bi")
+
+[node name="mouse" parent="." unique_id=1026600477 instance=ExtResource("1_dyl4d")]
+position = Vector2(322, 283)
