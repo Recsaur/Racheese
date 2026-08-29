@@ -1,22 +1,92 @@
 [gd_scene format=3 uid="uid://d50wsnu26asm"]
 
-[ext_resource type="Texture2D" uid="uid://dhugqev6ohhcu" path="res://assets/mouse.webp" id="1_5v7j2"]
 [ext_resource type="Script" uid="uid://bjshqfsmet0xs" path="res://scenes/mouse.gd" id="1_ouscy"]
+[ext_resource type="Texture2D" uid="uid://bdsmih7id2whk" path="res://assets/mouse.png" id="2_ouscy"]
+[ext_resource type="Script" uid="uid://wwex4yt51dsp" path="res://scenes/tail.gd" id="3_iog6k"]
+[ext_resource type="Texture2D" uid="uid://dihi5klcpkptk" path="res://assets/tailmouse.png" id="4_dexx5"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ouscy"]
-size = Vector2(62, 100)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ouscy"]
+radius = 13.0
+height = 44.0
 
 [node name="mouse" type="CharacterBody2D" unique_id=1026600477]
+rotation = -3.1415927
 script = ExtResource("1_ouscy")
 
+[node name="Tail" type="Node2D" parent="." unique_id=951563755]
+script = ExtResource("3_iog6k")
+
+[node name="Sprite2D" type="Sprite2D" parent="Tail" unique_id=1679321285]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Tail" unique_id=1742847317]
+position = Vector2(-34.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Tail" unique_id=575200961]
+position = Vector2(-40.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Tail" unique_id=109371689]
+position = Vector2(-46.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Tail" unique_id=1812870048]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Tail" unique_id=1360498563]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Tail" unique_id=1901638252]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D8" type="Sprite2D" parent="Tail" unique_id=66346587]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D9" type="Sprite2D" parent="Tail" unique_id=1591132095]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Sprite2D10" type="Sprite2D" parent="Tail" unique_id=1876953916]
+position = Vector2(-28.5, 0)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+texture = ExtResource("4_dexx5")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1029987561]
+position = Vector2(-24, 1.3113416e-07)
+rotation = 1.5707964
+scale = Vector2(3, 3)
+
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=174198772]
-position = Vector2(-1.9073486e-06, -1.1368684e-13)
-scale = Vector2(0.058333322, 0.088333316)
-texture = ExtResource("1_5v7j2")
+rotation = -4.712389
+scale = Vector2(3, 3)
+texture = ExtResource("2_ouscy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2034203907]
-shape = SubResource("RectangleShape2D_ouscy")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1362173947]
-zoom = Vector2(0.9, 0.9)
-position_smoothing_enabled = true
+position = Vector2(-2, 0)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_ouscy")

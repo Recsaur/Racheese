@@ -2,14 +2,17 @@ extends CharacterBody2D
 
 
 const SPEED = 500.0
+const MOMENTUM = 125
 #const JUMP_VELOCITY = -400.0
 
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_vector("left","right","up","down")
 	if direction:
-		velocity = direction * SPEED
+		velocity = velocity.move_toward(direction * 500, 2000 * delta)
+		#rotation = lerp_angle(rotation, velocity.angle(), delta * 10.0)
 	else:
-		velocity = Vector2.ZERO
-	
+		velocity = velocity.move_toward(Vector2.ZERO, 1500 * delta)
+	if velocity.length() > 1.0:
+		rotation = lerp_angle(rotation, velocity.angle(), delta * 10.0)
 	move_and_slide()
