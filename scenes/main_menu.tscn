@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cp2jvi38yqet1"]
+
+[ext_resource type="Texture2D" uid="uid://dnhlettbu1ofv" path="res://assets/Settings Button-export.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://b08lt3i0ntb3g" path="res://assets/Settings Button-exporhovert.png" id="2_bqqt6"]
+
+[node name="MainMenu" type="Control" unique_id=572435440]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=690761384]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Settings" type="TextureButton" parent="." unique_id=8987890]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 414.0
+offset_right = 539.0
+offset_bottom = 432.0
+scale = Vector2(3, 3)
+texture_normal = ExtResource("1_ekxnf")
+texture_hover = ExtResource("2_bqqt6")
+
+[node name="TextureButton3" type="TextureButton" parent="." unique_id=653765386]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://32gbidsspi3r"]
+
+[ext_resource type="Texture2D" uid="uid://cl8yto6g4xqg0" path="res://assets/js.png" id="1_51vln"]
+[ext_resource type="Script" uid="uid://dehdlp16f2cub" path="res://scenes/collectparticle.gd" id="2_768gm"]
+
+[sub_resource type="Curve" id="Curve_768gm"]
+_limits = [0.0, 10.0, 0.0, 1.5]
+_data = [Vector2(0, 10), 0.0, 0.0, 0, 0, Vector2(1.5, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_gc5w5"]
+curve = SubResource("Curve_768gm")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_66ihs"]
+particle_flag_disable_z = true
+spread = 90.0
+initial_velocity_min = 250.0
+initial_velocity_max = 350.0
+gravity = Vector3(0, 980, 0)
+scale_curve = SubResource("CurveTexture_gc5w5")
+
+[node name="GPUParticles2D" type="GPUParticles2D" unique_id=4950257]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+rotation = -1.5707964
+emitting = false
+texture = ExtResource("1_51vln")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_66ihs")
+script = ExtResource("2_768gm")
