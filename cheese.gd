@@ -13,6 +13,9 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	var collectparticle = collectfx.instantiate()
+	AudioHandler.EatSound()
+	get_parent().CheeseCollected += 1
+	get_parent().DoorCheck()
 	get_parent().add_child(collectparticle)
 	collectparticle.position = position
 	GameController.emit_signal("Action",10)

@@ -1,32 +1,90 @@
 [gd_scene format=3 uid="uid://cp2jvi38yqet1"]
 
-[ext_resource type="Texture2D" uid="uid://dnhlettbu1ofv" path="res://assets/Settings Button-export.png" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://b08lt3i0ntb3g" path="res://assets/Settings Button-exporhovert.png" id="2_bqqt6"]
+[ext_resource type="Script" uid="uid://4erumqociphw" path="res://scenes/main_menu.gd" id="1_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://bribv8j1ibxcr" path="res://assets/Play Button-export.png" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://pyqrj8fdxfgm" path="res://assets/Play Button-exporthover.png" id="2_8ln24"]
+[ext_resource type="Texture2D" uid="uid://dmxxrhjqjhpc2" path="res://assets/Settings Button-exportnor.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://cjpuimrw38x2g" path="res://assets/Settings Button-exporthover.png" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://ghrv1lwrci7p" path="res://assets/Credits Button-export.png" id="5_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://hbs3woxgxesr" path="res://assets/Credits Button-exporthover.png" id="6_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://cwn8qdl1qe3r1" path="res://assets/Quit button-export.png" id="7_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://6tjomu3ve54l" path="res://assets/Quit button-exporthover.png" id="8_lgwnu"]
+[ext_resource type="PackedScene" uid="uid://d4g4lqh7wy6ku" path="res://scenes/fade_transition.tscn" id="10_5dd4i"]
 
 [node name="MainMenu" type="Control" unique_id=572435440]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+script = ExtResource("1_jk1qb")
 
-[node name="TextureButton" type="TextureButton" parent="." unique_id=690761384]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Settings" type="TextureButton" parent="." unique_id=8987890]
-layout_mode = 0
-offset_left = 424.0
-offset_top = 414.0
-offset_right = 539.0
-offset_bottom = 432.0
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1376482031]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 154.0
+offset_bottom = 154.0
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(3, 3)
-texture_normal = ExtResource("1_ekxnf")
-texture_hover = ExtResource("2_bqqt6")
+use_top_left = true
 
-[node name="TextureButton3" type="TextureButton" parent="." unique_id=653765386]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=893632524]
+layout_mode = 2
+
+[node name="Play" type="TextureButton" parent="CenterContainer/VBoxContainer" unique_id=690761384]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_wu84c")
+texture_hover = ExtResource("2_8ln24")
+
+[node name="Settings" type="TextureButton" parent="CenterContainer/VBoxContainer" unique_id=8987890]
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("3_rtw2f")
+texture_hover = ExtResource("4_wu84c")
+
+[node name="Credits" type="TextureButton" parent="CenterContainer/VBoxContainer" unique_id=184269032]
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("5_tbmy8")
+texture_hover = ExtResource("6_jk1qb")
+
+[node name="Quit" type="TextureButton" parent="CenterContainer/VBoxContainer" unique_id=653765386]
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("7_5dd4i")
+texture_hover = ExtResource("8_lgwnu")
+
+[node name="FadeTransition" parent="." unique_id=1606885627 instance=ExtResource("10_5dd4i")]
+visible = false
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 1406.1111
+offset_bottom = 1060.3069
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="FadeTimer" type="Timer" parent="FadeTransition" unique_id=1133402581]
+wait_time = 3.0
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="timeout" from="FadeTransition/FadeTimer" to="." method="_on_fade_timer_timeout"]

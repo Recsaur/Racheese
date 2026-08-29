@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dl0w22kj1v6xa"]
+
+[ext_resource type="Texture2D" uid="uid://iydpa4g1bkkv" path="res://assets/randd.png" id="1_hpvv5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5f452"]
+size = Vector2(53.5, 8)
+
+[node name="Door" type="StaticBody2D" unique_id=324160436]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1629032109]
+shape = SubResource("RectangleShape2D_5f452")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1076307133]
+modulate = Color(14.824255, 4.9955254, 12.393706, 1)
+position = Vector2(2.861023e-06, 1.1920929e-07)
+scale = Vector2(10.800001, 1.5999999)
+texture = ExtResource("1_hpvv5")

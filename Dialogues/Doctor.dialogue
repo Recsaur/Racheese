@@ -1,0 +1,6 @@
+~ start
+Dr. Mouse: Oh you're awake... I'm sorry, [wait=0.25]but you have a rare colon disease[wait=0.5] you can't eat anymore cheese
+- Start again => start
+- End the conversation => END
+Nathan: For more information see the online documentation.
+=> END

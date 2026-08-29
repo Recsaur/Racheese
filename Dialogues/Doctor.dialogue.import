@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://db5javaicaadi"
+path="res://.godot/imported/Doctor.dialogue-b6f44b5c02acde6e6ef16b8dac043f0e.tres"
+
+[deps]
+
+source_file="res://Dialogues/Doctor.dialogue"
+dest_files=["res://.godot/imported/Doctor.dialogue-b6f44b5c02acde6e6ef16b8dac043f0e.tres"]
+
+[params]
+
+defaults=true

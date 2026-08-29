@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cycvluhjsst5v"]
+
+[ext_resource type="Script" uid="uid://dvdlilotad6jf" path="res://scenes/bad_cheese.gd" id="1_7hjnx"]
+[ext_resource type="Texture2D" uid="uid://m21o3sk6b7o1" path="res://assets/Mouldy cheese pixel art.png" id="1_gi0vm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hjnx"]
+size = Vector2(31, 29.5)
+
+[node name="BadCheese" type="Area2D" unique_id=18663393]
+script = ExtResource("1_7hjnx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1656342715]
+position = Vector2(-1, 1)
+texture = ExtResource("1_gi0vm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=641995497]
+shape = SubResource("RectangleShape2D_7hjnx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

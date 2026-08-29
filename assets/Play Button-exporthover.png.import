@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnhlettbu1ofv"
-path="res://.godot/imported/Settings Button-export.png-c5edc18cc5d32ae2339aec2b98e2c571.ctex"
+uid="uid://pyqrj8fdxfgm"
+path="res://.godot/imported/Play Button-exporthover.png-50a58c0a77fbcb3544cc2cfc2fd38518.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Settings Button-export.png"
-dest_files=["res://.godot/imported/Settings Button-export.png-c5edc18cc5d32ae2339aec2b98e2c571.ctex"]
+source_file="res://assets/Play Button-exporthover.png"
+dest_files=["res://.godot/imported/Play Button-exporthover.png-50a58c0a77fbcb3544cc2cfc2fd38518.ctex"]
 
 [params]
 

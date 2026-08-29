@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b08lt3i0ntb3g"
-path="res://.godot/imported/Settings Button-exporhovert.png-9063445f38ea51946bb8db5b0a300c8b.ctex"
+uid="uid://6tjomu3ve54l"
+path="res://.godot/imported/Quit button-exporthover.png-9ddd4ab86a5d7010141a435e8a70a387.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Settings Button-exporhovert.png"
-dest_files=["res://.godot/imported/Settings Button-exporhovert.png-9063445f38ea51946bb8db5b0a300c8b.ctex"]
+source_file="res://assets/Quit button-exporthover.png"
+dest_files=["res://.godot/imported/Quit button-exporthover.png-9ddd4ab86a5d7010141a435e8a70a387.ctex"]
 
 [params]
 

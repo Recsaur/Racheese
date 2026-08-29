@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://d4g4lqh7wy6ku"]
+
+[sub_resource type="Animation" id="Animation_x8c23"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1317.1158, 87.115875)]
+}
+
+[sub_resource type="Animation" id="Animation_6uw4y"]
+resource_name = "in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1860.0001, -395.99997), Vector2(-681.0001, 476.9999)]
+}
+
+[sub_resource type="Animation" id="Animation_3nli8"]
+resource_name = "out"
+step = 0.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-868.0001, 526.9999), Vector2(479, 1366)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vxaoj"]
+_data = {
+&"RESET": SubResource("Animation_x8c23"),
+&"in": SubResource("Animation_6uw4y"),
+&"out": SubResource("Animation_3nli8")
+}
+
+[node name="FadeTransition" type="Control" unique_id=120612081]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1481433849]
+layout_mode = 0
+offset_left = -1317.1158
+offset_top = 87.115875
+offset_right = 880.4901
+offset_bottom = 1670.116
+rotation = -0.7853982
+color = Color(0.05342087, 0.053420886, 0.05342088, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect" unique_id=955138115]
+callback_mode_process = 0
+libraries/ = SubResource("AnimationLibrary_vxaoj")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d3i6s1h3loya5"]
+
+[ext_resource type="AudioStream" uid="uid://bt4f1af68wi2g" path="res://assets/sound/Cheese-Eat_sfx.wav" id="1_hk86o"]
+[ext_resource type="Script" uid="uid://oaiy6jgxukan" path="res://scenes/audio_handler.gd" id="1_m0grf"]
+
+[node name="AudioHandler" type="Node2D" unique_id=289646391]
+script = ExtResource("1_m0grf")
+
+[node name="Eat" type="AudioStreamPlayer2D" parent="." unique_id=1418797660]
+stream = ExtResource("1_hk86o")
