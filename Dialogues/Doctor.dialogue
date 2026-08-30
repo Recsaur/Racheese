@@ -1,7 +1,7 @@
 ~ start
 Dr. Robert: [do GameController.TalkDoctor = true][do GameController.TalkPlayer = false][wait=0.5]Oh you're awake.[wait=0.25].[wait=0.25].[wait=0.25] I'm sorry, [wait=0.5]but you have a rare colon disease[wait=0.75] you can't eat anymore cheese.
 Mak(You): [do GameController.TalkPlayer = true][do GameController.TalkDoctor = false]But doctor I [wave]love[/wave] cheese is there anything I can do?
-Dr. Robert: [do GameController.TalkDoctor = true][do GameController.TalkPlayer = false]There is something if you follow me
+Dr. Robert: [do GameController.TalkDoctor = true][do GameController.TalkPlayer = false]There is something if you follow me.
 Mak(You): [do GameController.TalkPlayer = true][do GameController.TalkDoctor = false]Oh! Thank you so much ^^
 Dr. Robert: [do GameController.TalkDoctor = true][do GameController.TalkPlayer = false]No thank you... [do AudioHandler.MainMenuBGStop()]FOR BEING PART OF MY EXPERIMENT HAHAHHAHA
 #- Start Experiments => END

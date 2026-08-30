@@ -1,7 +1,60 @@
 [gd_scene format=3 uid="uid://uljdccbg6lby"]
 
+[ext_resource type="FontFile" uid="uid://dc3pnfj0j5c36" path="res://assets/GrapeSoda.ttf" id="1_56xg8"]
+[ext_resource type="Texture2D" uid="uid://odg2vtsmyi6s" path="res://assets/mouseportrait.png" id="2_2p8y1"]
+[ext_resource type="Texture2D" uid="uid://bt5x2aok7weoj" path="res://assets/docmouse.png" id="3_2kix4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_o45c1"]
+font = ExtResource("1_56xg8")
+font_size = 64
+font_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_56xg8"]
+font = ExtResource("1_56xg8")
+font_size = 48
+font_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+
 [node name="EndMap" type="Node2D" unique_id=1551873113]
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1035167134]
 offset_right = 40.0
 offset_bottom = 45.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=226039671]
+offset_left = -58.0
+offset_top = -37.0
+offset_right = 1264.0
+offset_bottom = 682.0
+color = Color(1, 1, 0.63529414, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1104313920]
+offset_left = 27.0
+offset_top = 33.0
+offset_right = 951.0
+offset_bottom = 298.0
+text = "\"Thank you for being a part of the
+ experiments... but I never said 
+you could leave hhahahahahahaaa.\" 
+- Doctor Robert"
+label_settings = SubResource("LabelSettings_o45c1")
+
+[node name="Mouseportrait" type="Sprite2D" parent="." unique_id=242145597]
+position = Vector2(619, 461)
+scale = Vector2(4.972223, 4.972223)
+texture = ExtResource("2_2p8y1")
+
+[node name="Docmouse" type="Sprite2D" parent="." unique_id=1718245621]
+position = Vector2(969, 459.00003)
+scale = Vector2(4.972, 4.972)
+texture = ExtResource("3_2kix4")
+flip_h = true
+
+[node name="Label2" type="Label" parent="." unique_id=320597415]
+offset_left = -191.0
+offset_top = 444.0
+offset_right = 733.0
+offset_bottom = 709.0
+text = "===THE END===
+THANKS 4 PLAYING ^^"
+label_settings = SubResource("LabelSettings_56xg8")
+horizontal_alignment = 1

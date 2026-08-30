@@ -18,7 +18,9 @@
 [ext_resource type="Texture2D" uid="uid://dnhm7pavcwdd4" path="res://assets/Cheese pixel art.png" id="14_mor57"]
 [ext_resource type="Texture2D" uid="uid://pkp1otib0lww" path="res://assets/m2.png" id="15_86qx7"]
 [ext_resource type="PackedScene" uid="uid://d4g4lqh7wy6ku" path="res://scenes/fade_transition.tscn" id="17_cnxvd"]
+[ext_resource type="Texture2D" uid="uid://26o6snkvev3r" path="res://assets/Restart button.png" id="18_6ojwg"]
 [ext_resource type="PackedScene" uid="uid://dwqkecscl7iyt" path="res://scenes/solid_door.tscn" id="19_eewdx"]
+[ext_resource type="Texture2D" uid="uid://dh7qymnu2t1ed" path="res://assets/Restart button-export.png" id="19_wteqp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eewdx"]
 texture = ExtResource("6_hr528")
@@ -181,10 +183,20 @@ position = Vector2(575.75, 327.75)
 scale = Vector2(4.0648146, 4.0648146)
 texture = ExtResource("15_86qx7")
 
-[node name="FadeTransition" parent="." unique_id=120612081 instance=ExtResource("17_cnxvd")]
+[node name="TextureButton" type="TextureButton" parent="." unique_id=391356723]
+offset_left = 42.0
+offset_top = 477.0
+offset_right = 72.0
+offset_bottom = 507.0
+scale = Vector2(4.637438, 4.637438)
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("18_6ojwg")
+texture_hover = ExtResource("19_wteqp")
 
 [node name="SolidDoor" parent="." unique_id=1930550457 instance=ExtResource("19_eewdx")]
 position = Vector2(545, 6)
+
+[node name="FadeTransition" parent="." unique_id=120612081 instance=ExtResource("17_cnxvd")]
 
 [node name="FinishLvl" type="Area2D" parent="." unique_id=1903140036]
 position = Vector2(609, 667)
@@ -193,4 +205,5 @@ position = Vector2(609, 667)
 shape = SubResource("RectangleShape2D_eewdx")
 
 [connection signal="timeout" from="CheeseTimer" to="." method="_on_cheese_timer_timeout"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="body_entered" from="FinishLvl" to="." method="_on_finish_lvl_body_entered"]

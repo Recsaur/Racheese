@@ -41,6 +41,8 @@ func _on_cheese_timer_timeout() -> void:
 
 
 func _on_finish_lvl_body_entered(body: Node2D) -> void:
+	GameController.MouseSpeed = 2000
+	GameController.MouseMaxSpeed = 500
 	$mouse.queue_free()
 	$CheeseTimer.stop()
 	$FadeTransition/ColorRect/AnimationPlayer.play("in")

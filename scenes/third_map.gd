@@ -50,3 +50,7 @@ func _on_finish_lvl_body_entered(body: Node2D) -> void:
 	get_tree().change_scene_to_packed(NextScene)
 	
 	
+func _on_texture_button_pressed() -> void:
+	GameController.MouseSpeed = 2000
+	GameController.MouseMaxSpeed = 500
+	get_tree().reload_current_scene()
