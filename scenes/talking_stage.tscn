@@ -1,19 +1,38 @@
-[gd_scene format=3 uid="uid://g4634desg1pl"]
+[gd_scene format=4 uid="uid://g4634desg1pl"]
 
 [ext_resource type="Script" uid="uid://boq7urk3855uh" path="res://scenes/talking_stage.gd" id="1_aolih"]
 [ext_resource type="Resource" uid="uid://db5javaicaadi" path="res://Dialogues/Doctor.dialogue" id="2_x6jca"]
 [ext_resource type="PackedScene" uid="uid://d4g4lqh7wy6ku" path="res://scenes/fade_transition.tscn" id="3_3e0j0"]
 [ext_resource type="Texture2D" uid="uid://byulgrgyb4eic" path="res://assets/floorformousse.png" id="3_7fv70"]
+[ext_resource type="Texture2D" uid="uid://stgdxsftv2cp" path="res://assets/wallfors.png" id="5_muylx"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6l2ju"]
+texture = ExtResource("5_muylx")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_421ns"]
+sources/0 = SubResource("TileSetAtlasSource_6l2ju")
 
 [node name="TalkingStage" type="Node2D" unique_id=2133268027]
 script = ExtResource("1_aolih")
 dialogueintro = ExtResource("2_x6jca")
 
-[node name="Floorformousse" type="Sprite2D" parent="." unique_id=491062334]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=391923619]
+layer = -1
+
+[node name="Floorformousse" type="Sprite2D" parent="CanvasLayer" unique_id=491062334]
 position = Vector2(556, 423.5)
 scale = Vector2(31.750004, 35.78125)
 texture = ExtResource("3_7fv70")
 
+[node name="TileMapLayer" type="TileMapLayer" parent="CanvasLayer" unique_id=463225795]
+scale = Vector2(13.515915, 13.515915)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAEAAAAAAAIAAAAAAAIAAAABAAAAAAAAAAAAAAABAAEAAAAAAAEAAAABAAIAAAAAAAIAAAACAAAAAAAAAAAAAAACAAEAAAAAAAEAAAACAAIAAAAAAAIAAAADAAAAAAAAAAAAAAADAAEAAAAAAAEAAAADAAIAAAAAAAIAAAAEAAAAAAAAAAAAAAAEAAEAAAAAAAEAAAAEAAIAAAAAAAIAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAEAAAAFAAIAAAAAAAIAAAD//wAAAAAAAAAAAAD//wEAAAAAAAEAAAD//wIAAAAAAAIAAAAGAAAAAAAAAAAAAAAGAAEAAAAAAAEAAAAGAAIAAAAAAAIAAAD+/wAAAAAAAAAAAAD+/wEAAAAAAAEAAAD+/wIAAAAAAAIAAAA=")
+tile_set = SubResource("TileSet_421ns")
+
 [node name="FadeTransition" parent="." unique_id=1606885627 instance=ExtResource("3_3e0j0")]
+top_level = true
 offset_right = 1982.1096
 offset_bottom = 1384.3074

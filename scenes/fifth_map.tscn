@@ -1,34 +1,34 @@
-[gd_scene format=4 uid="uid://bm3eclndl31qk"]
+[gd_scene format=4 uid="uid://yxhw0aajdey5"]
 
-[ext_resource type="Script" uid="uid://c4weym4vivpq3" path="res://scenes/secondmap.gd" id="1_fiyo8"]
-[ext_resource type="Texture2D" uid="uid://dmkkqydqcy0l3" path="res://assets/DirtAndStones_S.jpg" id="1_tn8a4"]
-[ext_resource type="Script" uid="uid://bqj20lf5gsryi" path="res://camera_2d.gd" id="2_hpuik"]
-[ext_resource type="Texture2D" uid="uid://byulgrgyb4eic" path="res://assets/floorformousse.png" id="3_fiyo8"]
-[ext_resource type="Texture2D" uid="uid://bq7at7go0clvh" path="res://assets/m1.png" id="4_cnxvd"]
-[ext_resource type="Texture2D" uid="uid://d0r8co0lfpj3j" path="res://assets/MSP_MainMenuBG.png" id="4_eewdx"]
-[ext_resource type="PackedScene" uid="uid://d50wsnu26asm" path="res://scenes/mouse.tscn" id="5_eewdx"]
-[ext_resource type="Texture2D" uid="uid://e1uimol847up" path="res://icon.svg" id="6_hr528"]
-[ext_resource type="Texture2D" uid="uid://dxv4d8hih7f36" path="res://assets/wallsformouse.png" id="7_6ojwg"]
-[ext_resource type="Texture2D" uid="uid://xfcqd4w5u7gs" path="res://assets/bluwall.png" id="8_wteqp"]
-[ext_resource type="PackedScene" uid="uid://cl5iq56ou6omr" path="res://scenes/cheese.tscn" id="9_mqspm"]
-[ext_resource type="FontFile" uid="uid://dwsdq11q8j8ei" path="res://assets/Racheesev3-Regular.ttf" id="10_i5wy1"]
-[ext_resource type="Script" uid="uid://b7jwtiilw8gey" path="res://timer.gd" id="11_nr0l1"]
-[ext_resource type="PackedScene" uid="uid://cycvluhjsst5v" path="res://scenes/bad_cheese.tscn" id="12_bpfk1"]
-[ext_resource type="PackedScene" uid="uid://dl0w22kj1v6xa" path="res://scenes/door.tscn" id="13_31tsc"]
-[ext_resource type="Texture2D" uid="uid://dnhm7pavcwdd4" path="res://assets/Cheese pixel art.png" id="14_mor57"]
-[ext_resource type="Texture2D" uid="uid://pkp1otib0lww" path="res://assets/m2.png" id="15_86qx7"]
-[ext_resource type="PackedScene" uid="uid://d4g4lqh7wy6ku" path="res://scenes/fade_transition.tscn" id="17_cnxvd"]
-[ext_resource type="PackedScene" uid="uid://dwqkecscl7iyt" path="res://scenes/solid_door.tscn" id="19_eewdx"]
+[ext_resource type="Script" uid="uid://dbsf4iujoeyow" path="res://scenes/fifth_map.gd" id="1_is3dl"]
+[ext_resource type="Texture2D" uid="uid://dmkkqydqcy0l3" path="res://assets/DirtAndStones_S.jpg" id="2_r74rt"]
+[ext_resource type="Script" uid="uid://bqj20lf5gsryi" path="res://camera_2d.gd" id="3_c0eae"]
+[ext_resource type="Texture2D" uid="uid://d0r8co0lfpj3j" path="res://assets/MSP_MainMenuBG.png" id="4_1wehc"]
+[ext_resource type="Texture2D" uid="uid://byulgrgyb4eic" path="res://assets/floorformousse.png" id="5_iqqfd"]
+[ext_resource type="Texture2D" uid="uid://bq7at7go0clvh" path="res://assets/m1.png" id="6_k4l7b"]
+[ext_resource type="PackedScene" uid="uid://d50wsnu26asm" path="res://scenes/mouse.tscn" id="7_335uq"]
+[ext_resource type="Texture2D" uid="uid://e1uimol847up" path="res://icon.svg" id="8_68d1v"]
+[ext_resource type="Texture2D" uid="uid://dxv4d8hih7f36" path="res://assets/wallsformouse.png" id="9_xxk8r"]
+[ext_resource type="Texture2D" uid="uid://xfcqd4w5u7gs" path="res://assets/bluwall.png" id="10_m0wyq"]
+[ext_resource type="PackedScene" uid="uid://cl5iq56ou6omr" path="res://scenes/cheese.tscn" id="11_hix45"]
+[ext_resource type="FontFile" uid="uid://dwsdq11q8j8ei" path="res://assets/Racheesev3-Regular.ttf" id="12_i8ytj"]
+[ext_resource type="Script" uid="uid://b7jwtiilw8gey" path="res://timer.gd" id="13_v88xf"]
+[ext_resource type="PackedScene" uid="uid://cycvluhjsst5v" path="res://scenes/bad_cheese.tscn" id="14_5riss"]
+[ext_resource type="PackedScene" uid="uid://dl0w22kj1v6xa" path="res://scenes/door.tscn" id="15_fehgi"]
+[ext_resource type="Texture2D" uid="uid://dnhm7pavcwdd4" path="res://assets/Cheese pixel art.png" id="16_pkgu4"]
+[ext_resource type="Texture2D" uid="uid://pkp1otib0lww" path="res://assets/m2.png" id="17_05sho"]
+[ext_resource type="PackedScene" uid="uid://d4g4lqh7wy6ku" path="res://scenes/fade_transition.tscn" id="18_s21r7"]
+[ext_resource type="PackedScene" uid="uid://dwqkecscl7iyt" path="res://scenes/solid_door.tscn" id="19_4rlcl"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eewdx"]
-texture = ExtResource("6_hr528")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0s5e7"]
+texture = ExtResource("8_68d1v")
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hr528"]
-texture = ExtResource("7_6ojwg")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tfb5o"]
+texture = ExtResource("9_xxk8r")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -42,108 +42,108 @@ texture = ExtResource("7_6ojwg")
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ojwg"]
-texture = ExtResource("8_wteqp")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rfyhm"]
+texture = ExtResource("10_m0wyq")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSet" id="TileSet_6j713"]
+[sub_resource type="TileSet" id="TileSet_0edgh"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_eewdx")
-sources/1 = SubResource("TileSetAtlasSource_hr528")
-sources/2 = SubResource("TileSetAtlasSource_6ojwg")
+sources/0 = SubResource("TileSetAtlasSource_0s5e7")
+sources/1 = SubResource("TileSetAtlasSource_tfb5o")
+sources/2 = SubResource("TileSetAtlasSource_rfyhm")
 
-[sub_resource type="LabelSettings" id="LabelSettings_xqb8e"]
-font = ExtResource("10_i5wy1")
+[sub_resource type="LabelSettings" id="LabelSettings_i7ktp"]
+font = ExtResource("12_i8ytj")
 font_size = 64
 
-[sub_resource type="LabelSettings" id="LabelSettings_pciym"]
-font = ExtResource("10_i5wy1")
+[sub_resource type="LabelSettings" id="LabelSettings_nioxd"]
+font = ExtResource("12_i8ytj")
 font_size = 80
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eewdx"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_is3dl"]
 size = Vector2(46, 20)
 
-[node name="secondmap" type="Node2D" unique_id=1618327220]
-script = ExtResource("1_fiyo8")
+[node name="FifthMap" type="Node2D" unique_id=1964951735]
+script = ExtResource("1_is3dl")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1022135616]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=614968023]
 visible = false
 position = Vector2(494, 259)
-texture = ExtResource("1_tn8a4")
+texture = ExtResource("2_r74rt")
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1692252689]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1530305559]
 position = Vector2(574, 324)
 scale = Vector2(3.9999998, 3.9999998)
-script = ExtResource("2_hpuik")
+script = ExtResource("3_c0eae")
 
-[node name="Floorofracheese2" type="Sprite2D" parent="." unique_id=484935996]
+[node name="Floorofracheese2" type="Sprite2D" parent="." unique_id=265160342]
 position = Vector2(579.16174, 315.50003)
 scale = Vector2(0.23796757, 0.2165332)
-texture = ExtResource("4_eewdx")
+texture = ExtResource("4_1wehc")
 
-[node name="Floorofracheese" type="Sprite2D" parent="." unique_id=1532707010]
+[node name="Floorofracheese" type="Sprite2D" parent="." unique_id=1578767149]
 modulate = Color(0.5294118, 0.5294118, 0.5294118, 1)
 position = Vector2(577, 328.49997)
 scale = Vector2(13.666665, 20.468748)
-texture = ExtResource("3_fiyo8")
+texture = ExtResource("5_iqqfd")
 
-[node name="M1" type="Sprite2D" parent="." unique_id=898244226]
+[node name="M1" type="Sprite2D" parent="." unique_id=461762477]
 visible = false
 position = Vector2(662, 332)
 scale = Vector2(4, 4)
-texture = ExtResource("4_cnxvd")
+texture = ExtResource("6_k4l7b")
 
-[node name="mouse" parent="." unique_id=1026600477 instance=ExtResource("5_eewdx")]
+[node name="mouse" parent="." unique_id=1026600477 instance=ExtResource("7_335uq")]
 position = Vector2(541, 35)
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1891513357]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1990818455]
 modulate = Color(18.892, 18.892, 18.892, 0.675)
 position = Vector2(-87, 0)
 tile_map_data = PackedByteArray("AAAlAAAAAgAAAAAAAAAkAAAAAgAAAAAAAAAjAAAAAgAAAAAAAAAiAAAAAgAAAAAAAAAhAAAAAgAAAAAAAAAgAAAAAgAAAAAAAAAfAAAAAgAAAAAAAAAeAAAAAgAAAAAAAAAdAAAAAgAAAAAAAAAcAAAAAgAAAAAAAAAbAAAAAgAAAAAAAAAaAAAAAgAAAAAAAAAZAAAAAgAAAAAAAAAYAAAAAgAAAAAAAAAXAAAAAgAAAAAAAAAWAAAAAgAAAAAAAAAVAAAAAgAAAAAAAAAVAAEAAgAAAAAAAAAVAAIAAgAAAAAAAAAVAAMAAgAAAAAAAAAVAAQAAgAAAAAAAAAVAAUAAgAAAAAAAAAVAAYAAgAAAAAAAAAVAAcAAgAAAAAAAAAVAAgAAgAAAAAAAAAVAAkAAgAAAAAAAAAVAAoAAgAAAAAAAAAVAAsAAgAAAAAAAAAVAAwAAgAAAAAAAAAVAA0AAgAAAAAAAAAVAA4AAgAAAAAAAAAVAA8AAgAAAAAAAAAVABAAAgAAAAAAAAAVABEAAgAAAAAAAAAVABIAAgAAAAAAAAAVABMAAgAAAAAAAAAVABQAAgAAAAAAAAAVABUAAgAAAAAAAAAVABYAAgAAAAAAAAAVABcAAgAAAAAAAAAVABgAAgAAAAAAAAAVABkAAgAAAAAAAAAVABoAAgAAAAAAAAAVABsAAgAAAAAAAAAVABwAAgAAAAAAAAAVAB0AAgAAAAAAAAAVAB4AAgAAAAAAAAAVAB8AAgAAAAAAAAAVACAAAgAAAAAAAAAVACEAAgAAAAAAAAAVACIAAgAAAAAAAAAVACMAAgAAAAAAAAAVACQAAgAAAAAAAAAVACUAAgAAAAAAAAAVACYAAgAAAAAAAAAVACcAAgAAAAAAAAAVACgAAgAAAAAAAAAWACgAAgAAAAAAAAAXACgAAgAAAAAAAAAYACgAAgAAAAAAAAAZACgAAgAAAAAAAAAaACgAAgAAAAAAAAAbACgAAgAAAAAAAAAcACgAAgAAAAAAAAAdACgAAgAAAAAAAAAeACgAAgAAAAAAAAAfACgAAgAAAAAAAAAgACgAAgAAAAAAAAAhACgAAgAAAAAAAAAiACgAAgAAAAAAAAAjACgAAgAAAAAAAAAkACgAAgAAAAAAAAAlACgAAgAAAAAAAAAmACgAAgAAAAAAAAAnACgAAgAAAAAAAAAoACgAAgAAAAAAAAApACgAAgAAAAAAAAApACcAAgAAAAAAAAApACYAAgAAAAAAAAApACUAAgAAAAAAAAApACQAAgAAAAAAAAAoACQAAgAAAAAAAAAnACQAAgAAAAAAAAAmACQAAgAAAAAAAAAlACQAAgAAAAAAAAAkACQAAgAAAAAAAAAjACQAAgAAAAAAAAAiACQAAgAAAAAAAAAhACQAAgAAAAAAAAAhACMAAgAAAAAAAAAhACIAAgAAAAAAAAAhACEAAgAAAAAAAAAhACAAAgAAAAAAAAAgACAAAgAAAAAAAAAfACAAAgAAAAAAAAAeACAAAgAAAAAAAAAdACAAAgAAAAAAAAAdAB8AAgAAAAAAAAAdAB4AAgAAAAAAAAAdAB0AAgAAAAAAAAAdABwAAgAAAAAAAAAdABsAAgAAAAAAAAAdABoAAgAAAAAAAAAdABkAAgAAAAAAAAAdABgAAgAAAAAAAAAdABcAAgAAAAAAAAAdABYAAgAAAAAAAAAdABUAAgAAAAAAAAAdABQAAgAAAAAAAAAcABQAAgAAAAAAAAAbABQAAgAAAAAAAAAaABQAAgAAAAAAAAAZABQAAgAAAAAAAAAeABQAAgAAAAAAAAAfABQAAgAAAAAAAAAgABQAAgAAAAAAAAAhABQAAgAAAAAAAAAiABQAAgAAAAAAAAAjABQAAgAAAAAAAAAkABQAAgAAAAAAAAAlABQAAgAAAAAAAAAmABQAAgAAAAAAAAAnABQAAgAAAAAAAAAoABQAAgAAAAAAAAApABQAAgAAAAAAAAAqABQAAgAAAAAAAAArABQAAgAAAAAAAAAsABQAAgAAAAAAAAAtABQAAgAAAAAAAAAtABMAAgAAAAAAAAAtABIAAgAAAAAAAAAtABEAAgAAAAAAAAAtABAAAgAAAAAAAAAtABUAAgAAAAAAAAAtABYAAgAAAAAAAAAtABcAAgAAAAAAAAAtABgAAgAAAAAAAAAtABkAAgAAAAAAAAAtABoAAgAAAAAAAAAtABsAAgAAAAAAAAAtABwAAgAAAAAAAAAsABwAAgAAAAAAAAArABwAAgAAAAAAAAAqABwAAgAAAAAAAAApABwAAgAAAAAAAAApABgAAgAAAAAAAAAoABgAAgAAAAAAAAAnABgAAgAAAAAAAAAmABgAAgAAAAAAAAAlABgAAgAAAAAAAAAkABgAAgAAAAAAAAAjABgAAgAAAAAAAAAiABgAAgAAAAAAAAAhABgAAgAAAAAAAAAhABkAAgAAAAAAAAAhABoAAgAAAAAAAAAhABsAAgAAAAAAAAAhABwAAgAAAAAAAAAiABwAAgAAAAAAAAAjABwAAgAAAAAAAAAkABwAAgAAAAAAAAAlABwAAgAAAAAAAAAlAB0AAgAAAAAAAAAlAB4AAgAAAAAAAAAlAB8AAgAAAAAAAAAlACAAAgAAAAAAAAAmACAAAgAAAAAAAAAnACAAAgAAAAAAAAAoACAAAgAAAAAAAAApACAAAgAAAAAAAAAqACAAAgAAAAAAAAArACAAAgAAAAAAAAAsACAAAgAAAAAAAAAtACAAAgAAAAAAAAAtACEAAgAAAAAAAAAtACIAAgAAAAAAAAAtACMAAgAAAAAAAAAtACQAAgAAAAAAAAAtACUAAgAAAAAAAAAtACYAAgAAAAAAAAAtACcAAgAAAAAAAAAtACgAAgAAAAAAAAAuACgAAgAAAAAAAAAvACgAAgAAAAAAAAAwACgAAgAAAAAAAAAxACgAAgAAAAAAAAAyACgAAgAAAAAAAAAzACgAAgAAAAAAAAA0ACgAAgAAAAAAAAA1ACgAAgAAAAAAAAA2ACgAAgAAAAAAAAA3ACgAAgAAAAAAAAA4ACgAAgAAAAAAAAA5ACgAAgAAAAAAAAA6ACgAAgAAAAAAAAA7ACgAAgAAAAAAAAA8ACgAAgAAAAAAAAA9ACgAAgAAAAAAAAA9ACcAAgAAAAAAAAA9ACYAAgAAAAAAAAA9ACUAAgAAAAAAAAA9ACQAAgAAAAAAAAA9ACMAAgAAAAAAAAA9ACIAAgAAAAAAAAA9ACEAAgAAAAAAAAA9ACAAAgAAAAAAAAA9AB8AAgAAAAAAAAA9AB4AAgAAAAAAAAA9AB0AAgAAAAAAAAA9ABwAAgAAAAAAAAA9ABsAAgAAAAAAAAA9ABoAAgAAAAAAAAA9ABkAAgAAAAAAAAA9ABgAAgAAAAAAAAA9ABcAAgAAAAAAAAA9ABYAAgAAAAAAAAA9ABUAAgAAAAAAAAA9ABQAAgAAAAAAAAA9ABMAAgAAAAAAAAA9ABIAAgAAAAAAAAA9ABEAAgAAAAAAAAA9ABAAAgAAAAAAAAA9AA8AAgAAAAAAAAA9AA4AAgAAAAAAAAA9AA0AAgAAAAAAAAA9AAwAAgAAAAAAAAA9AAsAAgAAAAAAAAA9AAoAAgAAAAAAAAA9AAkAAgAAAAAAAAA9AAgAAgAAAAAAAAA9AAcAAgAAAAAAAAA9AAYAAgAAAAAAAAA9AAUAAgAAAAAAAAA9AAQAAgAAAAAAAAA9AAMAAgAAAAAAAAA9AAIAAgAAAAAAAAA9AAEAAgAAAAAAAAA9AAAAAgAAAAAAAAA8AAAAAgAAAAAAAAA7AAAAAgAAAAAAAAA6AAAAAgAAAAAAAAA5AAAAAgAAAAAAAAA4AAAAAgAAAAAAAAA3AAAAAgAAAAAAAAA2AAAAAgAAAAAAAAA1AAAAAgAAAAAAAAA0AAAAAgAAAAAAAAAzAAAAAgAAAAAAAAAyAAAAAgAAAAAAAAAxAAAAAgAAAAAAAAAwAAAAAgAAAAAAAAAvAAAAAgAAAAAAAAAuAAAAAgAAAAAAAAAtAAAAAgAAAAAAAAAsAAAAAgAAAAAAAAArAAAAAgAAAAAAAAAqAAAAAgAAAAAAAAApAAAAAgAAAAAAAAApAAEAAgAAAAAAAAApAAIAAgAAAAAAAAApAAMAAgAAAAAAAAApAAQAAgAAAAAAAAApAAUAAgAAAAAAAAApAAYAAgAAAAAAAAApAAcAAgAAAAAAAAApAAgAAgAAAAAAAAAqAAgAAgAAAAAAAAArAAgAAgAAAAAAAAAsAAgAAgAAAAAAAAAtAAgAAgAAAAAAAAAuAAgAAgAAAAAAAAAvAAgAAgAAAAAAAAAwAAgAAgAAAAAAAAAxAAgAAgAAAAAAAAAyAAgAAgAAAAAAAAAzAAgAAgAAAAAAAAA0AAgAAgAAAAAAAAA1AAgAAgAAAAAAAAAtAAQAAgAAAAAAAAAuAAQAAgAAAAAAAAAvAAQAAgAAAAAAAAAwAAQAAgAAAAAAAAAxAAQAAgAAAAAAAAAyAAQAAgAAAAAAAAAzAAQAAgAAAAAAAAA0AAQAAgAAAAAAAAA1AAQAAgAAAAAAAAA2AAQAAgAAAAAAAAA3AAQAAgAAAAAAAAA4AAQAAgAAAAAAAAA5AAQAAgAAAAAAAAA5AAUAAgAAAAAAAAA5AAYAAgAAAAAAAAA5AAcAAgAAAAAAAAA5AAgAAgAAAAAAAAA5AAkAAgAAAAAAAAA5AAoAAgAAAAAAAAA5AAsAAgAAAAAAAAA5AAwAAgAAAAAAAAA8AAwAAgAAAAAA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")
-tile_set = SubResource("TileSet_6j713")
+tile_set = SubResource("TileSet_0edgh")
 
-[node name="Cheese" parent="." unique_id=559608881 instance=ExtResource("9_mqspm")]
+[node name="Cheese" parent="." unique_id=559608881 instance=ExtResource("11_hix45")]
 position = Vector2(479, 295)
 
-[node name="Cheese2" parent="." unique_id=2124522127 instance=ExtResource("9_mqspm")]
+[node name="Cheese2" parent="." unique_id=231992787 instance=ExtResource("11_hix45")]
 position = Vector2(863, 168)
 
-[node name="Cheese3" parent="." unique_id=609195054 instance=ExtResource("9_mqspm")]
+[node name="Cheese3" parent="." unique_id=1160859832 instance=ExtResource("11_hix45")]
 position = Vector2(483, 424)
 
-[node name="Cheese4" parent="." unique_id=1992867694 instance=ExtResource("9_mqspm")]
+[node name="Cheese4" parent="." unique_id=1951481695 instance=ExtResource("11_hix45")]
 position = Vector2(737, 358)
 
-[node name="Cheese5" parent="." unique_id=360424440 instance=ExtResource("9_mqspm")]
+[node name="Cheese5" parent="." unique_id=235984110 instance=ExtResource("11_hix45")]
 position = Vector2(608, 294)
 
-[node name="CheeseTimer" type="Timer" parent="." unique_id=514099980]
+[node name="CheeseTimer" type="Timer" parent="." unique_id=1714083606]
 wait_time = 50.0
 one_shot = true
 autostart = true
 
-[node name="CheeseNeeds" type="Label" parent="." unique_id=863996234]
+[node name="CheeseNeeds" type="Label" parent="." unique_id=2062788709]
 offset_left = 996.0
 offset_top = 36.0
 offset_right = 1110.0
 offset_bottom = 123.0
 text = "0/3"
-label_settings = SubResource("LabelSettings_xqb8e")
+label_settings = SubResource("LabelSettings_i7ktp")
 
-[node name="Timer" type="Label" parent="." unique_id=388542755]
+[node name="Timer" type="Label" parent="." unique_id=1140595659]
 offset_left = 910.0
 offset_top = 258.0
 offset_right = 1144.0
 offset_bottom = 366.0
 size_flags_horizontal = 4
 text = "60.67"
-label_settings = SubResource("LabelSettings_pciym")
+label_settings = SubResource("LabelSettings_nioxd")
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("11_nr0l1")
+script = ExtResource("13_v88xf")
 
-[node name="CenterContainer" type="CenterContainer" parent="." unique_id=237165773]
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=176286588]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -157,40 +157,40 @@ grow_horizontal = 2
 grow_vertical = 2
 use_top_left = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1504934297]
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=666948594]
 layout_mode = 2
 
-[node name="BadCheese" parent="." unique_id=18663393 instance=ExtResource("12_bpfk1")]
+[node name="BadCheese" parent="." unique_id=18663393 instance=ExtResource("14_5riss")]
 position = Vector2(864, 426)
 
-[node name="BadCheese2" parent="." unique_id=1926577620 instance=ExtResource("12_bpfk1")]
+[node name="BadCheese2" parent="." unique_id=273873358 instance=ExtResource("14_5riss")]
 position = Vector2(480, 168)
 
-[node name="Door" parent="." unique_id=324160436 instance=ExtResource("13_31tsc")]
+[node name="Door" parent="." unique_id=324160436 instance=ExtResource("15_fehgi")]
 position = Vector2(609, 644)
 
-[node name="CheesePixelArt" type="Sprite2D" parent="." unique_id=430860629]
+[node name="CheesePixelArt" type="Sprite2D" parent="." unique_id=1968099540]
 position = Vector2(952, 90)
 scale = Vector2(2.4, 2.4)
-texture = ExtResource("14_mor57")
+texture = ExtResource("16_pkgu4")
 
-[node name="M2" type="Sprite2D" parent="." unique_id=2067177849]
+[node name="M2" type="Sprite2D" parent="." unique_id=1210029093]
 visible = false
 modulate = Color(1, 1, 1, 0.2784314)
 position = Vector2(575.75, 327.75)
 scale = Vector2(4.0648146, 4.0648146)
-texture = ExtResource("15_86qx7")
+texture = ExtResource("17_05sho")
 
-[node name="FadeTransition" parent="." unique_id=120612081 instance=ExtResource("17_cnxvd")]
+[node name="FadeTransition" parent="." unique_id=120612081 instance=ExtResource("18_s21r7")]
 
-[node name="SolidDoor" parent="." unique_id=1930550457 instance=ExtResource("19_eewdx")]
+[node name="SolidDoor" parent="." unique_id=1930550457 instance=ExtResource("19_4rlcl")]
 position = Vector2(545, 6)
 
-[node name="FinishLvl" type="Area2D" parent="." unique_id=1903140036]
+[node name="FinishLvl" type="Area2D" parent="." unique_id=1906509880]
 position = Vector2(609, 667)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishLvl" unique_id=217167436]
-shape = SubResource("RectangleShape2D_eewdx")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinishLvl" unique_id=1318748695]
+shape = SubResource("RectangleShape2D_is3dl")
 
 [connection signal="timeout" from="CheeseTimer" to="." method="_on_cheese_timer_timeout"]
 [connection signal="body_entered" from="FinishLvl" to="." method="_on_finish_lvl_body_entered"]

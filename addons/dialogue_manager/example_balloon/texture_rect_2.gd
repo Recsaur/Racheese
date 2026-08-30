@@ -1,4 +1,4 @@
-extends Node2D
+extends TextureRect
 
 
 # Called when the node enters the scene tree for the first time.
@@ -8,19 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
-
-func EatSound():
-	$Eat.play()
-
-func MainBG():
-	$BGMusicMain.play()
-	
-func MainMenuBG():
-	$MainMenu.play()
-
-func MainMenuBGStop():
-	$MainMenu.stop()
-	
-func GateOpen():
-	$GateOpen.play()
+	if GameController.TalkPlayer :
+		position = Vector2(693.0,332)
+	else:
+		position = Vector2(66.0,332)

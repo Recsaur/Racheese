@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://uljdccbg6lby"]
+
+[node name="EndMap" type="Node2D" unique_id=1551873113]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1035167134]
+offset_right = 40.0
+offset_bottom = 45.0

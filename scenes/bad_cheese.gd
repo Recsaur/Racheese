@@ -15,6 +15,7 @@ func _on_body_entered(body: Node2D) -> void:
 	var collectparticle = collectfx.instantiate()
 	AudioHandler.EatSound()
 	GameController.MoldyCheese()
+	get_parent().BadCheese += 1
 	get_parent().add_child(collectparticle)
 	collectparticle.position = position
 	GameController.emit_signal("Action",10)

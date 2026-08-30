@@ -82,7 +82,7 @@ rotation = 1.5707964
 scale = Vector2(3, 3)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=174198772]
-modulate = Color(1.4156048, 1.4156048, 1.4156048, 1)
+modulate = Color(1.4981097, 1.4981097, 1.4981097, 1)
 rotation = -4.712389
 scale = Vector2(3, 3)
 texture = ExtResource("2_ouscy")

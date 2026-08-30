@@ -26,3 +26,7 @@ func RandOffset() -> Vector2:
 	OffsetAmt = OffsetAmt.clamp(Vector2.ZERO,Vector2.ONE*28)
 		#print(ShakeStrength* GameController.Consecutive)
 	return OffsetAmt
+
+
+func _on_cheese_timer_timeout() -> void:
+	pass # Replace with function body.

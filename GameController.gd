@@ -2,10 +2,14 @@ extends Node
 
 signal Action(value : float)
 
+#MousePlayer Stuff
 var MouseSpeed = 2000.0 
 var MouseMaxSpeed = 500.0
+var FirstMusic = true
 
-#var CheeseCollected1
+#DialogueManager
+var TalkPlayer = false
+var TalkDoctor = true
 
 func MoldyCheese():
 	MouseSpeed -= 1000

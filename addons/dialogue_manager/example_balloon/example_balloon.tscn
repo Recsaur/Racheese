@@ -2,8 +2,15 @@
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Texture2D" uid="uid://odg2vtsmyi6s" path="res://assets/mouseportrait.png" id="2_v42gu"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
-[ext_resource type="Texture2D" uid="uid://iydpa4g1bkkv" path="res://assets/randd.png" id="3_nlsx6"]
+[ext_resource type="Texture2D" uid="uid://c3s1r0dkyj6dh" path="res://assets/lowertextcontatin.png" id="3_kmygl"]
+[ext_resource type="Texture2D" uid="uid://cqmiimlq4to03" path="res://assets/textcontain.png" id="3_nlsx6"]
+[ext_resource type="Script" uid="uid://cxa7vet2sawyc" path="res://addons/dialogue_manager/example_balloon/mouseportrait.gd" id="3_wqs7j"]
+[ext_resource type="Texture2D" uid="uid://bt5x2aok7weoj" path="res://assets/docmouse.png" id="4_1kn55"]
+[ext_resource type="FontFile" uid="uid://dc3pnfj0j5c36" path="res://assets/GrapeSoda.ttf" id="4_1337t"]
+[ext_resource type="Script" uid="uid://bjrsb51dgmrkg" path="res://addons/dialogue_manager/example_balloon/docmouse.gd" id="5_icj72"]
+[ext_resource type="Script" uid="uid://hhsoxi5lprgc" path="res://addons/dialogue_manager/example_balloon/texture_rect_2.gd" id="5_wqs7j"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -100,8 +107,13 @@ _data = {
 &"progress": SubResource("Animation_qkmqt")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_wqs7j"]
+font = ExtResource("4_1337t")
+font_size = 28
+font_color = Color(0.4713753, 0.47137535, 0.47137517, 1)
+
 [node name="ExampleBalloon" type="CanvasLayer" unique_id=1434168376]
-layer = 100
+layer = -1
 script = ExtResource("1_36de5")
 
 [node name="Balloon" type="Control" parent="." unique_id=359403728]
@@ -157,9 +169,90 @@ polygon = PackedVector2Array(0, 0, 10, 10, 20, 0)
 libraries/ = SubResource("AnimationLibrary_1337t")
 autoplay = &"progress"
 
-[node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" unique_id=966297223 node_paths=PackedStringArray("response_template")]
-unique_name_in_owner = true
+[node name="Mouseportrait" type="Sprite2D" parent="Balloon" unique_id=1122980208]
+modulate = Color(0.6784314, 0.6784314, 0.6784314, 1)
+position = Vector2(207, 327)
+scale = Vector2(3.8373017, 3.8373015)
+texture = ExtResource("2_v42gu")
+script = ExtResource("3_wqs7j")
+
+[node name="Docmouse" type="Sprite2D" parent="Balloon" unique_id=76405635]
+position = Vector2(920, 327.00003)
+scale = Vector2(5.357, 5.357)
+texture = ExtResource("4_1kn55")
+flip_h = true
+script = ExtResource("5_icj72")
+
+[node name="TextureRect2" type="TextureRect" parent="Balloon" unique_id=1339966406]
+visible = false
+modulate = Color(0.8244924, 0.8244924, 0.8244924, 1)
+layout_mode = 0
+offset_left = 66.0
+offset_top = 332.0
+offset_right = 460.61523
+offset_bottom = 440.0
+texture = ExtResource("3_kmygl")
+script = ExtResource("5_wqs7j")
+
+[node name="TextureRect" type="TextureRect" parent="Balloon" unique_id=1061924568]
 layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -535.0
+offset_top = -238.0
+offset_right = 535.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("3_nlsx6")
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/TextureRect" unique_id=507199029]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.501961)
+layout_mode = 0
+offset_left = 22.0
+offset_top = 10.0
+offset_right = 255.0
+offset_bottom = 66.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_1337t")
+theme_override_font_sizes/normal_font_size = 56
+bbcode_enabled = true
+text = "Character"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[node name="DialogueLabel" parent="Balloon/TextureRect" unique_id=1225160028 instance=ExtResource("2_a8ve6")]
+unique_name_in_owner = true
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+offset_left = 68.0
+offset_top = 64.0
+offset_right = 1070.0
+offset_bottom = 185.0
+grow_horizontal = 1
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_1337t")
+theme_override_font_sizes/normal_font_size = 48
+text = "Dialogue..."
+
+[node name="ColorRect" type="ColorRect" parent="Balloon/TextureRect" unique_id=1440978574]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 59.0
+offset_right = 256.0
+offset_bottom = 63.0
+color = Color(0.38170338, 0.3817032, 0.38170317, 1)
+
+[node name="ResponsesMenu" type="VBoxContainer" parent="." unique_id=966297223 node_paths=PackedStringArray("response_template")]
+unique_name_in_owner = true
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -177,46 +270,22 @@ alignment = 1
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
-[node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu" unique_id=914537232]
+[node name="ResponseExample" type="Button" parent="ResponsesMenu" unique_id=914537232]
 layout_mode = 2
 text = "Response example"
-
-[node name="TextureRect" type="TextureRect" parent="Balloon" unique_id=1061924568]
-layout_mode = 0
-offset_left = 37.0
-offset_top = 467.0
-offset_right = 1124.0
-offset_bottom = 627.0
-texture = ExtResource("3_nlsx6")
-
-[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/TextureRect" unique_id=507199029]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.501961)
-layout_mode = 0
-offset_left = 26.0
-offset_top = -5.0
-offset_right = 1028.0
-offset_bottom = 23.0
-mouse_filter = 1
-bbcode_enabled = true
-text = "Character"
-fit_content = true
-scroll_active = false
-
-[node name="DialogueLabel" parent="Balloon/TextureRect" unique_id=1225160028 instance=ExtResource("2_a8ve6")]
-unique_name_in_owner = true
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-offset_left = 26.0
-offset_top = 27.0
-offset_right = 1028.0
-offset_bottom = 148.0
-size_flags_vertical = 3
-text = "Dialogue..."
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1116280512]
 unique_name_in_owner = true
 
+[node name="Label" type="Label" parent="." unique_id=384534688]
+offset_left = 419.0
+offset_top = 576.0
+offset_right = 731.0
+offset_bottom = 608.0
+text = "Press Space to Continue"
+label_settings = SubResource("LabelSettings_wqs7j")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
-[connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
+[connection signal="response_selected" from="ResponsesMenu" to="." method="_on_responses_menu_response_selected"]

@@ -2,9 +2,24 @@
 
 [ext_resource type="AudioStream" uid="uid://bt4f1af68wi2g" path="res://assets/sound/Cheese-Eat_sfx.wav" id="1_hk86o"]
 [ext_resource type="Script" uid="uid://oaiy6jgxukan" path="res://scenes/audio_handler.gd" id="1_m0grf"]
+[ext_resource type="AudioStream" uid="uid://dguq1lktoswhb" path="res://assets/sound/New_Project.mp3" id="3_7fwcy"]
+[ext_resource type="AudioStream" uid="uid://c5x2fv3lwq8n3" path="res://assets/sound/Week 26 - Seaside CORAL REEF.ogg" id="4_11bbw"]
+[ext_resource type="AudioStream" uid="uid://k3dc4xp4yxve" path="res://assets/sound/dooropen.mp3" id="5_24e85"]
 
 [node name="AudioHandler" type="Node2D" unique_id=289646391]
 script = ExtResource("1_m0grf")
 
 [node name="Eat" type="AudioStreamPlayer2D" parent="." unique_id=1418797660]
 stream = ExtResource("1_hk86o")
+
+[node name="BGMusicMain" type="AudioStreamPlayer2D" parent="." unique_id=1518240174]
+stream = ExtResource("3_7fwcy")
+parameters/looping = true
+
+[node name="MainMenu" type="AudioStreamPlayer2D" parent="." unique_id=1811026383]
+stream = ExtResource("4_11bbw")
+parameters/looping = true
+
+[node name="GateOpen" type="AudioStreamPlayer2D" parent="." unique_id=1421781365]
+stream = ExtResource("5_24e85")
+volume_db = 15.0
